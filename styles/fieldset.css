@@ -1,0 +1,7 @@
+fieldset {
+    margin-bottom: 48px;
+}
+
+.app fieldset:first-of-type {
+    margin-top: 40px;
+}
