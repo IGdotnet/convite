@@ -1,0 +1,37 @@
+.about_event {
+    #title{
+        margin-top: 20px;
+        input {
+            width: 100%;
+        }
+    }
+
+    #firstline{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1.5rem;
+    }
+
+    #secondline {
+        display: grid;
+        grid-auto-flow: column;
+
+        #type {
+            margin-right: auto;
+
+            #type2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    #description {
+        display: flex;
+    }
+
+    div {
+        gap: 16px;
+    }
+}

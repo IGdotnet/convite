@@ -2,6 +2,7 @@
 
     h1 {
         margin-top: 80px;
+        font: var(--heading-md);
     }
 
     padding-inline: 80px;

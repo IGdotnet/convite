@@ -1,0 +1,11 @@
+.personalData {
+    & .grid {
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 1fr;
+
+        & div.grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+    }
+}

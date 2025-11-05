@@ -1,7 +1,36 @@
 fieldset {
     margin-bottom: 48px;
+    border: none;
+
+    & legend {
+        font: var(--heading-sm);
+    }
+
+    & input[type="text"],
+    & textarea,
+    & input[type="tel"]  {
+        background-color: var(--input-base);
+        height: 3rem;
+        width: 100%;
+        font: var(--body-md);
+        border-radius: .5rem;
+        border: 1px solid var(--input-stroke);
+    }
+
+    & div {
+        padding-top: .5rem;
+        & label {
+            font: var(--body-sm);
+        }
+    }
 }
 
 .app fieldset:first-of-type {
     margin-top: 40px;
+}
+
+legend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

@@ -42,35 +42,49 @@
                 <fieldset class="about_event">
                     <legend><img src="assets/icons/calendar.svg" alt="">Sobre o evento</legend>
 
-                    <div>
-                        <label for="evetn name">Tírulo</label>
+                    <div id="title">
+                        <div><label for="evetn name">Título</label></div>
                         <input type="text" name="evetn name" id="evetn name" placeholder="Nome do evento">
                     </div>
 
-                    <div>
-                        <label for="inicio">Início</label>
-                        <input type="text" name="inicio" id="inicio" placeholder="DD/MM/AAAA,--|--">
+                    <div id="firstline">
+                        <div>
+                            <div><label for="inicio">Início</label></div>
+                            <input type="text" name="inicio" id="inicio" placeholder="DD/MM/AAAA,--|--">
+                        </div>
+                        <div>
+                            <div><label for="fim">Fim</label></div>
+                            <input type="text" name="fim" id="fim" placeholder="DD/MM/AAAA, --|--">
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="fim">Fim</label>
-                        <input type="text" name="fim" id="fim" placeholder="DD/MM/AAAA, --|--">
+                    <div id="secondline">
+                        <div id="type">
+                            <div><label for="tipo">Tipo</label></div>
+                            <div id="type2">
+                                <div>
+                                    <input type="radio" name="tipo" id="presencial">
+                                    <img src="assets/icons/building-2.svg" alt="">
+                                    <label for="Presencial"></label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="tipo" id="online">
+                                    <img src="assets/icons/video.svg" alt="">
+                                    <label for="Online"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="local">
+                            <div><label for="local">Local</label></div>
+                            <input type="tel" name="local" id="local" placeholder="Link ou endereço">
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="tipo">Tipo</label>
-                        <input type="radio" name="tipo" id="presencial">
-                        <input type="radio" name="tipo" id="online">
-                    </div>
-
-                    <div>
-                        <label for="local">Local</label>
-                        <input type="tel" name="local" id="local" placeholder="Link ou endereço">
-                    </div>
-
-                    <div>
-                        <label for="descricao">Descrição</label>
-                        <textarea name="descricao" id="descricao" cols="30" rows="7"></textarea>
+                    <div id="description">
+                        <div>
+                            <div><label for="descricao">Descrição</label></div>
+                            <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+                        </div>
                     </div>
 
                 </fieldset>
@@ -159,11 +173,68 @@
                         </figure>
                     </div>
 
-                    <div class="style">
-                        
+                    <div class="everything">
+                        <div class="divstyle">
+                            <span>Estilo</span>
+                            <div class="style">
+                                <img src="assets/Frame 48095946.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="divstyle2">
+                            <span>Foto de capa</span>
+                            <div class="dropzone">
+                                <input type="file" name="file" id="file">
+                                <img src="assets/upload.svg" alt="">
+                                <p>Selecionar</p>
+                            </div>
+                        </div>
+                        <span>Nenhum arquivo selecionado</span>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="personalData">
+                    <legend><img src="assets/contact.svg" alt="">Dados para contato</legend>
+                    <div class="grid">
+                        <div>
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Nome completo">
+                        </div>
+                        <div class="grid">
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" id="email" placeholder="exemplo@email.com">
+                            </div>
+                            <div>
+                                <label for="tel">Telefone</label>
+                                <input type="text" name="tel" id="tel" placeholder="(99) 99999-9999">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <footer>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="chech" id="check">
+                            <p>Li e concordo com os <a href="">Termos e condições</a> e com a <a href="">Política de Privacidade</a></p>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="chech" id="check">
+                            <p>Aceito receber atualizações e promoções por e-mail</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="chech" id="check">
+                            <p>Aceito receber atualizações e promoções por SMS</p>
+                        </div>
                     </div>
 
-                </fieldset>
+                    <div>
+                        <img src="assets/ticket.svg" alt="">
+                        <input type="button" value="Gerar convite">
+                    </div>
+                </footer>
+
             </div>
         </main>
     </div>
